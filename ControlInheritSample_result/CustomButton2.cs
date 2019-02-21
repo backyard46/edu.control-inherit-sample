@@ -15,7 +15,6 @@ namespace ControlInheritSample
         protected override void OnCreateControl()
         {
             base.OnCreateControl();
-
             // 初期表示時に年月日を表示したい場合、OnCreateControlに処理を書けばOKです。
             this.Text = DateTime.Now.ToLongDateString();
         }

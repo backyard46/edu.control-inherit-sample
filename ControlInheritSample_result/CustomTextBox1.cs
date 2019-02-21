@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace ControlInheritSample
@@ -17,8 +18,8 @@ namespace ControlInheritSample
         {
             // 最初に「本来のテキストボックスが行うべきMouseEnter処理」を実行する。
             base.OnMouseEnter(e);
-
-            // ここに、自分の色を変える処理を書いてください。
+            // テキストボックス背景色を変更。
+            this.BackColor = Color.Aqua;
         }
 
         /// <summary>
@@ -29,8 +30,8 @@ namespace ControlInheritSample
         {
             // 最初に「本来のテキストボックスが行うべきMouseLeave処理」を実行する。
             base.OnMouseLeave(e);
-
-            // ここに、自分の色を元に戻す処理を書いてください。
+            // テキストボックス背景色を戻す。元々の色はSystemColors.Window。
+            this.BackColor = SystemColors.Window;
         }
     }
 }
