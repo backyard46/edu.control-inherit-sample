@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace ControlInheritSample
+namespace ControlInherit
 {
     /// <summary>
     /// 課題3: マウスカーソルが上を通過するときだけ色が変わるテキストボックス。

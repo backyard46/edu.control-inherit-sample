@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace ControlInheritSample
+namespace ControlInherit
 {
     public partial class SampleForm : Form
     {

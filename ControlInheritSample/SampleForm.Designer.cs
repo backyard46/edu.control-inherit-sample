@@ -1,4 +1,4 @@
-﻿namespace ControlInheritSample
+﻿namespace ControlInherit
 {
     partial class SampleForm
     {

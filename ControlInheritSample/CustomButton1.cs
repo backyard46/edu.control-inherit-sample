@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace ControlInheritSample
+namespace ControlInherit
 {
     /// <summary>
     /// 課題1: 押すたびに色が変わるボタン。
