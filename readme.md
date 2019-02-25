@@ -3,13 +3,7 @@
 ITSS準拠の研修カリキュラム「プログラミングの基礎(2)（B121）」のうち、「継承」に関する課題と正解例です。
 
 ## 事前準備
-- 子フォームを作り、接続設定変更機能を実装してもらいます、。そのため、事前に [EDU. Transfer data between forms](https://gitlab.com/it_education/edu.-transfer-data-between-forms) のフォーム間情報連携に関するサンプルコードの解説を行い、フォーム同士での情報連携について理解させてください。
-- 研修環境からアクセス可能なSQL Serverに、「Database」ディレクトリにある下記のSQL 2件でテーブルとデータを作成してください。
-  - TableCreate.sql …… Monstersテーブルを生成するCreate文です。
-  - DataInsert.sql …… Monstersテーブルにポケモンデータを登録するInsert文です。
-- MonsterViewer.cs / SimpleSearchの「connectionString」変数に接続先サーバー情報が記述されているので、用意した環境のサーバー、DB名、ID、パスワードに書き換えてください。
-- 同じく、Properties / Settings.settings にある接続先情報も書き換えてください。
-- 課題用ソースを受講者に配布し、Visual Studioで開ける状態にしてください。
+- 課題用ソース（プロジェクト: ControlInheritSample）を受講者に配布し、Visual Studioで開ける状態にしてください。
 
 
 
