@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace ControlInheritSample
+namespace ControlInheritResult
 {
     /// <summary>
     /// 課題2: 押すたびに表面の文字が「年月日」→「時分秒」に変わるボタン。

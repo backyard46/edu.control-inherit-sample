@@ -1,4 +1,4 @@
-﻿namespace ControlInheritSample
+﻿namespace ControlInheritResult
 {
     partial class SampleForm_Result
     {
@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.customTextBox21 = new ControlInheritSample.CustomTextBox2();
-            this.customTextBox11 = new ControlInheritSample.CustomTextBox1();
-            this.customButton21 = new ControlInheritSample.CustomButton2();
-            this.customButton11 = new ControlInheritSample.CustomButton1();
+            this.customTextBox21 = new ControlInheritResult.CustomTextBox2();
+            this.customTextBox11 = new ControlInheritResult.CustomTextBox1();
+            this.customButton21 = new ControlInheritResult.CustomButton2();
+            this.customButton11 = new ControlInheritResult.CustomButton1();
             this.SuspendLayout();
             // 
             // customTextBox21

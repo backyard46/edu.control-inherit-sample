@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ControlInheritSample.Properties
+namespace ControlInheritResult.Properties
 {
 
 
