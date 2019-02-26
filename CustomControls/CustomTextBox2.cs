@@ -2,13 +2,13 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace ControlInheritSample
+namespace CustomControls
 {
     /// <summary>
     /// 課題3: マウスカーソルが上を通過するときだけ色が変わるテキストボックス。
     /// </summary>
     /// <seealso cref="System.Windows.Forms.TextBox" />
-    class CustomTextBox2 : TextBox
+    public class CustomTextBox2 : TextBox
     {
         private Font defaultFont, altFont;
 

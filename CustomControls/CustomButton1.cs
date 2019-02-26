@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
-namespace ControlInheritSample
+namespace CustomControls
 {
     /// <summary>
     /// 課題1: 押すたびに色が変わるボタン。
     /// </summary>
     /// <seealso cref="System.Windows.Forms.Button" />
-    class CustomButton1 : Button
+    [System.ComponentModel.ToolboxItem(true)]
+    public class CustomButton1 : Button
     {
         /// <summary>
         /// ボタンがクリックされた際の処理。

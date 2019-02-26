@@ -1,13 +1,14 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
-namespace ControlInherit
+namespace CustomControlLibrary
 {
     /// <summary>
     /// 課題3: マウスカーソルが上を通過するときだけ色が変わるテキストボックス。
     /// </summary>
     /// <seealso cref="System.Windows.Forms.TextBox" />
-    public class CustomTextBox1 : TextBox
+    class CustomTextBox1 : TextBox
     {
         /// <summary>
         /// マウスカーソルが上に来たときの処理。
@@ -17,8 +18,8 @@ namespace ControlInherit
         {
             // 最初に「本来のテキストボックスが行うべきMouseEnter処理」を実行する。
             base.OnMouseEnter(e);
-
-            // ここに、自分の色を変える処理を書いてください。
+            // テキストボックス背景色を変更。
+            this.BackColor = Color.Aqua;
         }
 
         /// <summary>
@@ -29,8 +30,8 @@ namespace ControlInherit
         {
             // 最初に「本来のテキストボックスが行うべきMouseLeave処理」を実行する。
             base.OnMouseLeave(e);
-
-            // ここに、自分の色を元に戻す処理を書いてください。
+            // テキストボックス背景色を戻す。元々の色はSystemColors.Window。
+            this.BackColor = SystemColors.Window;
         }
     }
 }

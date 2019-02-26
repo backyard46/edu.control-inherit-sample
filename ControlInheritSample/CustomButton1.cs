@@ -10,7 +10,7 @@ namespace ControlInherit
     /// 課題1: 押すたびに色が変わるボタン。
     /// </summary>
     /// <seealso cref="System.Windows.Forms.Button" />
-    class CustomButton1 : Button
+    public class CustomButton1 : Button
     {
         /// <summary>
         /// ボタンがクリックされた際の処理。

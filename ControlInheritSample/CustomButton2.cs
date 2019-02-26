@@ -10,7 +10,7 @@ namespace ControlInherit
     /// 課題2: 押すたびに表面の文字が「年月日」→「時分秒」に変わるボタン。
     /// </summary>
     /// <seealso cref="System.Windows.Forms.Button" />
-    class CustomButton2 : Button
+    public class CustomButton2 : Button
     {
         /// <summary>
         /// ボタンがクリックされた際の処理。
