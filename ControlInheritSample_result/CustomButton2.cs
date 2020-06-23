@@ -29,15 +29,16 @@ namespace ControlInheritResult
             base.OnClick(e);
 
             // ここに、自分の色を変える処理を書いてください。
-            if (this.Text.Length == 10)
+            if (this.Text.Contains("日"))
             {
+                // 文字列に「日」が入っていたら、時刻表示に切り替える
                 this.Text = DateTime.Now.ToLongTimeString();
             }
             else
             {
+                // 日付表示に切り替える
                 this.Text = DateTime.Now.ToLongDateString();
             }
-
         }
     }
 }
