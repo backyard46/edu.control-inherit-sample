@@ -7,7 +7,8 @@ using System.Windows.Forms;
 namespace ControlInherit
 {
     /// <summary>
-    /// 課題2: 押すたびに表面の文字が「年月日」→「時分秒」に変わるボタン。
+    /// 押すたびに表面の文字が「年月日」→「時分秒」に変わるボタン。
+    /// 1回押すと表示が「時分秒」に切り替わり、もう一度押すと「年月日」に切り替わります。
     /// </summary>
     /// <seealso cref="System.Windows.Forms.Button" />
     public class CustomButton2 : Button
@@ -21,7 +22,7 @@ namespace ControlInherit
             // 最初に「本来のボタンが行うべきクリック処理」を実行する。
             base.OnClick(e);
 
-            // ここに、自分の色を変える処理を書いてください。
+            // ここに、ボタン表面の文字を書き換える処理を書いてください。
             
 
         }

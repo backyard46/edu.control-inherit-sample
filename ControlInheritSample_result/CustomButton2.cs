@@ -4,7 +4,7 @@ using System.Windows.Forms;
 namespace ControlInheritResult
 {
     /// <summary>
-    /// 課題2: 押すたびに表面の文字が「年月日」→「時分秒」に変わるボタン。
+    /// 押すたびに表面の文字が「年月日」→「時分秒」に変わるボタン。
     /// </summary>
     /// <seealso cref="System.Windows.Forms.Button" />
     public class CustomButton2 : Button

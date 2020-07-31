@@ -5,7 +5,7 @@ using System.Windows.Forms;
 namespace ControlInheritResult
 {
     /// <summary>
-    /// 課題3: マウスカーソルが上を通過するときだけ色が変わるテキストボックス。
+    /// 文字入力時だけ太字になるテキストボックス。
     /// </summary>
     /// <seealso cref="System.Windows.Forms.TextBox" />
     public class CustomTextBox2 : TextBox

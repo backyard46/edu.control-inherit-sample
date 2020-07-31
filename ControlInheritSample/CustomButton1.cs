@@ -7,7 +7,7 @@ using System.Windows.Forms;
 namespace ControlInherit
 {
     /// <summary>
-    /// 課題1: 押すたびに色が変わるボタン。
+    /// 押すたびに色が変わるボタン。
     /// </summary>
     /// <seealso cref="System.Windows.Forms.Button" />
     public class CustomButton1 : Button
@@ -22,7 +22,8 @@ namespace ControlInherit
             base.OnClick(e);
 
             // ここに、自分の色を変える処理を書いてください。
-
+            // 自分自身（ボタン）は「this」で指し示すことができるので、「this.プロパティ名」で
+            // プロパティを書き換えれば色を変える事が出来ます。
 
         }
     }

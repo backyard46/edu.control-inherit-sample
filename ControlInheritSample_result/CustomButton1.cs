@@ -8,7 +8,7 @@ using System.Windows.Forms;
 namespace ControlInheritResult
 {
     /// <summary>
-    /// 課題1: 押すたびに色が変わるボタン。
+    /// 押すたびに色が変わるボタン。
     /// </summary>
     /// <seealso cref="System.Windows.Forms.Button" />
     public class CustomButton1 : Button
