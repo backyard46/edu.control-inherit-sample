@@ -51,7 +51,7 @@
             this.customButton21.Name = "customButton21";
             this.customButton21.Size = new System.Drawing.Size(219, 65);
             this.customButton21.TabIndex = 1;
-            this.customButton21.Text = "customButton21";
+            this.customButton21.Text = "2020年8月19日";
             this.customButton21.UseVisualStyleBackColor = true;
             // 
             // customTextBox11
@@ -74,7 +74,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 712);
+            this.ClientSize = new System.Drawing.Size(272, 267);
             this.Controls.Add(this.customTextBox21);
             this.Controls.Add(this.customTextBox11);
             this.Controls.Add(this.customButton21);

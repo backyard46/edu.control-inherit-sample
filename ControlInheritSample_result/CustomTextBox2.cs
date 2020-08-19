@@ -10,20 +10,18 @@ namespace ControlInheritResult
     /// <seealso cref="System.Windows.Forms.TextBox" />
     public class CustomTextBox2 : TextBox
     {
-        private Font defaultFont, altFont;
+        // 事前にフォント情報を用意しておく。
+        // コントロール自体Fontプロパティの中身はReadonlyのため部分的な書き換えができない。
+        // そのため、各設定に応じたFont情報自体を作っておいてFontごと差し替える。
+        private Font defaultFont = new Font("Meiryo UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+        private Font altFont = new System.Drawing.Font("Meiryo UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
 
-        /// <summary>
-        /// コントロール生成時の初期処理。
-        /// </summary>
-        protected override void OnCreateControl()
-        {
-            base.OnCreateControl();
-            // 事前にフォント情報を用意しておく。
-            // コントロール自体Fontプロパティの中身はReadonlyのため部分的な書き換えができない。
-            // そのため、各設定に応じたFont情報自体を作っておいてFontごと差し替える。
-            defaultFont = new Font("Meiryo UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            altFont = new System.Drawing.Font("Meiryo UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-        }
+        // ※フォント指定に「今のフォントをそのままに、太字にする」といった場合
+        // 　new Font(this.Font, FontStyle.Bold);
+        // 　という記法でフォントオブジェクトを生成することもできます。ただし、その場合、
+        // 　thisはメソッドの中でしか使えないため上記の方法ではなく、テキストボックス生成時に
+        // 　実行される「OnCreateControl」などでフォントオブジェクトの生成を行ってください。
+
 
         /// <summary>
         /// テキストボックスにフォーカスが移動した際の処理。
